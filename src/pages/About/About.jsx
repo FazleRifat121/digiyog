@@ -1,5 +1,11 @@
+import Navbar from "../../shared/Navbar/Navbar";
+
 const About = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default About;

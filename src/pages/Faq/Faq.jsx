@@ -1,5 +1,11 @@
+import Navbar from "../../shared/Navbar/Navbar";
+
 const Faq = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 
 export default Faq;

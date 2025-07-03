@@ -2,7 +2,7 @@ import phone from "../../../assets/hero/iPhone-14-Pro-Perspective-Mockup 1.png";
 import playStore from "../../../assets/hero/playstore.png";
 const Hero = () => {
   return (
-    <div className=" h-dvh">
+    <div className=" min-h-screen">
       <div className="flex justify-around gap-10  items-center flex-col lg:flex-row-reverse">
         <img src={phone} className="max-w-sm rounded-lg" />
         <div className="md:w-[500px]">
