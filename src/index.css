@@ -2,3 +2,15 @@
 @plugin "daisyui" {
   themes: light --default;
 }
+@font-face {
+  font-family: "Mont Light";
+  src: url("/fonts/Mont-ExtraLightDEMO.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont Heavy";
+  src: url("/fonts/Mont-HeavyDemo.otf") format("truetype");
+}
+@theme {
+  --font-montLight: "Mont Light", sans-serif;
+  --font-montHeavy: "Mont Heavy", sans-serif;
+}
