@@ -1,19 +1,19 @@
-import firstCard from "../../../assets/whyDigiyog/first-card.png";
-import orangeDot from "../../../assets/whyDigiyog/orange-dot.png";
-import secondCard from "../../../assets/whyDigiyog/second-card.png";
-import limeDot from "../../../assets/whyDigiyog/lime-dot.png";
-import thirdCard from "../../../assets/whyDigiyog/third-card.png";
-import purpleDor from "../../../assets/whyDigiyog/purple-dot.png";
-import fourthCard from "../../../assets/whyDigiyog/fourth-card.png";
-import yellowDot from "../../../assets/whyDigiyog/yellow-dot.png";
-import fifthCard from "../../../assets/whyDigiyog/fifth-card.png";
-import blueDot from "../../../assets/whyDigiyog/blue-dot.png";
-import sixthCard from "../../../assets/whyDigiyog/sixth-card.png";
-import redDot from "../../../assets/whyDigiyog/red-dot.png";
-import vector1 from "../../../assets/whyDigiyog/vector 1.png";
-import vector2 from "../../../assets/whyDigiyog/vector 2.png";
-import buildingImg from "../../../assets/whyDigiyog/building-img.png";
-import buidlingBg from "../../../assets/whyDigiyog/building-bg.png";
+import firstCard from "../../../assets/whydigiyog/first-card.png";
+import orangeDot from "../../../assets/whydigiyog/orange-dot.png";
+import secondCard from "../../../assets/whydigiyog/second-card.png";
+import limeDot from "../../../assets/whydigiyog/lime-dot.png";
+import thirdCard from "../../../assets/whydigiyog/third-card.png";
+import purpleDor from "../../../assets/whydigiyog/purple-dot.png";
+import fourthCard from "../../../assets/whydigiyog/fourth-card.png";
+import yellowDot from "../../../assets/whydigiyog/yellow-dot.png";
+import fifthCard from "../../../assets/whydigiyog/fifth-card.png";
+import blueDot from "../../../assets/whydigiyog/blue-dot.png";
+import sixthCard from "../../../assets/whydigiyog/sixth-card.png";
+import redDot from "../../../assets/whydigiyog/red-dot.png";
+import vector1 from "../../../assets/whydigiyog/vector 1.png";
+import vector2 from "../../../assets/whydigiyog/vector 2.png";
+import buildingImg from "../../../assets/whydigiyog/building-img.png";
+import buidlingBg from "../../../assets/whydigiyog/building-bg.png";
 const WhyDigiyog = () => {
   return (
     <div className="bg-green-900 relative mt-10 ">
