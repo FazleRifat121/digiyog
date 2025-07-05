@@ -23,13 +23,13 @@ const WhyDigiyog = () => {
         </h1>
 
         <div className="flex justify-between items-center flex-col-reverse md:flex-row gap-10">
-          <div className="w-[700px]  ml-70 md:ml-0 ">
+          <div className="w-[700px]  ml-64 md:ml-0 ">
             {/* first card  */}
             <div className="flex items-center relative">
               <img
                 src={firstCard}
                 alt=""
-                className="w-32 ml-15 mt-[18px] md:w-auto md:ml-0 md:mt-0"
+                className="w-32 ml-15 mt-[17px] md:w-auto md:ml-0 md:mt-0"
               />
               <img
                 src={vector2}
@@ -63,7 +63,7 @@ const WhyDigiyog = () => {
               <img
                 src={secondCard}
                 alt=""
-                className="mr-[68px] w-32 mt-[18px] md:w-auto md:mr-4 md:mt-0"
+                className="mr-[70px] w-32 mt-[17px] md:w-auto md:mr-4 md:mt-0"
               />
             </div>
             {/* third card  */}
@@ -71,7 +71,7 @@ const WhyDigiyog = () => {
               <img
                 src={thirdCard}
                 alt=""
-                className="w-32 ml-15 mt-[18px] md:w-auto md:ml-0 md:mt-0"
+                className="w-32 ml-15 mt-[17px] md:w-auto md:ml-0 md:mt-0"
               />
               <img
                 src={vector2}
@@ -105,7 +105,7 @@ const WhyDigiyog = () => {
               <img
                 src={fourthCard}
                 alt=""
-                className="mr-[68px] w-32 mt-[18px] md:w-auto md:mr-4 md:mt-0"
+                className="mr-[70px] w-32 mt-[17px] md:w-auto md:mr-4 md:mt-0"
               />
             </div>
             {/* fifth card  */}
@@ -113,7 +113,7 @@ const WhyDigiyog = () => {
               <img
                 src={fifthCard}
                 alt=""
-                className="w-32 ml-15 mt-[18px] md:w-auto md:ml-0 md:mt-0"
+                className="w-32 ml-15 mt-[17px] md:w-auto md:ml-0 md:mt-0"
               />
               <img
                 src={vector2}
@@ -124,7 +124,7 @@ const WhyDigiyog = () => {
               <img
                 src={vector1}
                 alt=""
-                className="absolute h-24 left-[215px] top-15"
+                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
               />
             </div>
             {/* sixth card  */}
@@ -142,7 +142,7 @@ const WhyDigiyog = () => {
               <img
                 src={sixthCard}
                 alt=""
-                className="mr-[68px] w-32 mt-[18px] md:w-auto md:mr-4 md:mt-0"
+                className="mr-[70px] w-32 mt-[17px] md:w-auto md:mr-4 md:mt-0"
               />
             </div>
           </div>
