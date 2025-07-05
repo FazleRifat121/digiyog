@@ -392,7 +392,7 @@ const WhyDigiyog = () => {
               />
               <img
                 src={vector1}
-                className="absolute lg:lg:h-24 h-[90px] h-[90px] left-[215px] top-15"
+                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
                 id="fifthVector1"
               />
             </div>
