@@ -34,7 +34,7 @@ const WhyDigiyog = () => {
               <img
                 src={vector2}
                 alt=""
-                className="absolute left-[180px] top-[50px] "
+                className="absolute left-[180px] top-[50px]  "
               />
               <img src={orangeDot} alt="" className="absolute left-52 top-11" />
               <img
@@ -48,7 +48,7 @@ const WhyDigiyog = () => {
               <img
                 src={vector2}
                 alt=""
-                className="absolute right-[447px] top-[50px] "
+                className="absolute right-[447px] top-[50px] lg:right-[280px] xl:right-[447px] "
               />
               <img
                 src={limeDot}
@@ -63,7 +63,7 @@ const WhyDigiyog = () => {
               <img
                 src={secondCard}
                 alt=""
-                className="mr-[70px] w-32 mt-[17px] md:w-auto md:mr-4 md:mt-0"
+                className="mr-[70px] w-32 mt-[17px] md:w-auto md:mr-4 md:mt-0 lg:-mr-38 xl:mr-4"
               />
             </div>
             {/* third card  */}
@@ -90,7 +90,7 @@ const WhyDigiyog = () => {
               <img
                 src={vector2}
                 alt=""
-                className="absolute right-[447px] top-[50px] "
+                className="absolute right-[447px] top-[50px] lg:right-[280px] xl:right-[447px] "
               />
               <img
                 src={yellowDot}
@@ -132,7 +132,7 @@ const WhyDigiyog = () => {
               <img
                 src={vector2}
                 alt=""
-                className="absolute right-[447px] top-[50px] "
+                className="absolute right-[447px] top-[50px] lg:right-[280px] xl:right-[447px] "
               />
               <img
                 src={redDot}
