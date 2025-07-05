@@ -9,8 +9,6 @@ import greenBg from "../../../assets/hero/greenBg.png";
 import leftCircle from "../../../assets/hero/leftCircle.png";
 import rightCircle from "../../../assets/hero/rightCircle.png";
 
-gsap.registerPlugin(SplitText);
-
 const Hero = () => {
   const titleRef = useRef(null);
   const paraRef = useRef(null);
@@ -106,7 +104,7 @@ const Hero = () => {
             <button className="btn bg-[#06582C] text-white border-0 w-56">
               Get Started
             </button>
-            <button className="btn border bg-transparent border-black text-black w-56 hover:border-white hover:text-white">
+            <button className="btn border bg-transparent border-black text-black w-56 hover:border-white hover:text-white text-wrap">
               Get the app from Playstore
               <img src={playStore} alt="playstore" width={13} />
             </button>

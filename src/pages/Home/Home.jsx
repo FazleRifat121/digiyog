@@ -1,6 +1,7 @@
 import Navbar from "../../shared/Navbar/Navbar";
 import Hero from "./Hero/Hero";
 import HowItWork from "./HowItWork/HowItWork";
+import WhyDigiyog from "./WhyDigiyog/WhyDigiyog";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         </div>
       </div>
       <HowItWork />
+      <WhyDigiyog />
     </div>
   );
 };
