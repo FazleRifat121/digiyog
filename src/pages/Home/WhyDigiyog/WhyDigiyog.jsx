@@ -52,7 +52,7 @@ const WhyDigiyog = () => {
     tl.from("#firstCardImg", {
       x: -40,
       opacity: 0,
-      duration: 1.5,
+      duration: 1,
       ease: "power1.out",
     })
       .from(
@@ -60,7 +60,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "expo.out",
         },
         "+=0.1"
@@ -70,7 +70,7 @@ const WhyDigiyog = () => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.2,
           ease: "back.out(1.7)",
         },
         "+=0.1"
@@ -80,7 +80,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.3,
           ease: "power2.out",
         },
         "+=0.1"
@@ -90,7 +90,7 @@ const WhyDigiyog = () => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.2,
           ease: "back.out(1.7)",
         },
         "+=0.1"
@@ -100,7 +100,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "expo.out",
         },
         "+=0.1"
@@ -110,7 +110,7 @@ const WhyDigiyog = () => {
         {
           x: -2,
           opacity: 0,
-          duration: 1.5,
+          duration: 0.7,
           ease: "power1.out",
         },
         "+=0.1"
@@ -120,7 +120,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.3,
           ease: "power2.out",
         },
         "+=0.1"
@@ -130,7 +130,7 @@ const WhyDigiyog = () => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.2,
           ease: "back.out(1.7)",
         },
         "+=0.1"
@@ -140,7 +140,7 @@ const WhyDigiyog = () => {
         {
           x: 40,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "expo.out",
         },
         "+=0.1"
@@ -150,7 +150,7 @@ const WhyDigiyog = () => {
         {
           x: 2,
           opacity: 0,
-          duration: 1.5,
+          duration: 0.7,
           ease: "power1.out",
         },
         "+=0.1"
@@ -160,7 +160,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.3,
           ease: "power2.out",
         },
         "+=0.1"
@@ -170,7 +170,7 @@ const WhyDigiyog = () => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.2,
           ease: "back.out(1.7)",
         },
         "+=0.1"
@@ -180,7 +180,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "expo.out",
         },
         "+=0.1"
@@ -190,7 +190,7 @@ const WhyDigiyog = () => {
         {
           x: -2,
           opacity: 0,
-          duration: 1.5,
+          duration: 0.7,
           ease: "power1.out",
         },
         "+=0.1"
@@ -200,7 +200,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.3,
           ease: "power2.out",
         },
         "+=0.1"
@@ -210,7 +210,7 @@ const WhyDigiyog = () => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.2,
           ease: "back.out(1.7)",
         },
         "+=0.1"
@@ -220,7 +220,7 @@ const WhyDigiyog = () => {
         {
           x: 40,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "expo.out",
         },
         "+=0.1"
@@ -230,7 +230,7 @@ const WhyDigiyog = () => {
         {
           x: 2,
           opacity: 0,
-          duration: 1.5,
+          duration: 0.7,
           ease: "power1.out",
         },
         "+=0.1"
@@ -240,7 +240,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.3,
           ease: "power2.out",
         },
         "+=0.1"
@@ -250,7 +250,7 @@ const WhyDigiyog = () => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.2,
           ease: "back.out(1.7)",
         },
         "+=0.1"
@@ -260,7 +260,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           ease: "expo.out",
         },
         "+=0.1"
@@ -268,7 +268,7 @@ const WhyDigiyog = () => {
       .from("#sixthCardImg", {
         x: -2,
         opacity: 0,
-        duration: 1.5,
+        duration: 0.7,
         ease: "power1.out",
       });
   }, []);
@@ -300,7 +300,7 @@ const WhyDigiyog = () => {
               />
               <img
                 src={vector1}
-                className="absolute h-24 left-[215px] top-15"
+                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
                 id="firstVector1"
               />
             </div>
@@ -318,7 +318,7 @@ const WhyDigiyog = () => {
               />
               <img
                 src={vector1}
-                className="absolute h-24 left-[215px] top-15"
+                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
                 id="secondVector1"
               />
               <img
@@ -346,7 +346,7 @@ const WhyDigiyog = () => {
               />
               <img
                 src={vector1}
-                className="absolute h-24 left-[215px] top-15"
+                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
                 id="thirdVector1"
               />
             </div>
@@ -364,7 +364,7 @@ const WhyDigiyog = () => {
               />
               <img
                 src={vector1}
-                className="absolute h-24 left-[215px] top-15"
+                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
                 id="fourthVector1"
               />
               <img
@@ -392,7 +392,7 @@ const WhyDigiyog = () => {
               />
               <img
                 src={vector1}
-                className="absolute lg:h-24 h-[90px] left-[215px] top-15"
+                className="absolute lg:lg:h-24 h-[90px] h-[90px] left-[215px] top-15"
                 id="fifthVector1"
               />
             </div>
