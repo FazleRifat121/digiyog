@@ -10,8 +10,8 @@ import fifthCard from "../../../assets/whydigiyog/fifth-card.png";
 import blueDot from "../../../assets/whydigiyog/blue-dot.png";
 import sixthCard from "../../../assets/whydigiyog/sixth-card.png";
 import redDot from "../../../assets/whydigiyog/red-dot.png";
-import vector1 from "../../../assets/whydigiyog/vector 1.png";
-import vector2 from "../../../assets/whydigiyog/vector 2.png";
+import vector1 from "../../../assets/whydigiyog/vector-1.png";
+import vector2 from "../../../assets/whydigiyog/vector-2.png";
 import buildingImg from "../../../assets/whydigiyog/building-img.png";
 import buidlingBg from "../../../assets/whydigiyog/building-bg.png";
 const WhyDigiyog = () => {
