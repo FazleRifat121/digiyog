@@ -151,7 +151,7 @@ const WhyDigiyog = () => {
             <img
               src={buidlingBg}
               alt=""
-              className="absolute top-20 lg:top-28 z-0"
+              className="absolute top-24 lg:top-28 z-0"
             />
           </div>
         </div>
