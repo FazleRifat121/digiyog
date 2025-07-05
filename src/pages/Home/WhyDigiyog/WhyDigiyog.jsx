@@ -22,8 +22,8 @@ const WhyDigiyog = () => {
           Why Digiyog?
         </h1>
 
-        <div className="flex justify-between items-center flex-col-reverse md:flex-row gap-10">
-          <div className="w-[700px]  ml-64 md:ml-0 ">
+        <div className="flex justify-between items-center flex-col-reverse lg:flex-row gap-10">
+          <div className="w-[700px]  ml-64 lg:ml-0 ">
             {/* first card  */}
             <div className="flex items-center relative">
               <img
@@ -148,7 +148,11 @@ const WhyDigiyog = () => {
           </div>
           <div className="relative mt-0">
             <img src={buildingImg} alt="" className="relative z-10" />
-            <img src={buidlingBg} alt="" className="absolute top-28 z-0" />
+            <img
+              src={buidlingBg}
+              alt=""
+              className="absolute top-20 lg:top-28 z-0"
+            />
           </div>
         </div>
       </div>
