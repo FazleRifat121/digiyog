@@ -14,7 +14,7 @@ const HowItWork = () => {
         toggleActions: "restart",
         scrub: true,
       },
-      x: -200,
+      x: -100,
       duration: 2,
     });
   }, []);
