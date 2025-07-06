@@ -23,7 +23,7 @@ const WhyDigiyog = () => {
       scrollTrigger: {
         trigger: "#why",
         start: "top 80%",
-        toggleActions: "restart none none none", // 🔁 Restart on every enter
+        toggleActions: "restart none none none",
       },
       x: -200,
       duration: 2,
