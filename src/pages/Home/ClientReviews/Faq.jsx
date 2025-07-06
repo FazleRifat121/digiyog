@@ -10,7 +10,7 @@ const Faq = () => {
         toggleActions: "restart",
         scrub: true,
       },
-      x: 30,
+      x: 100,
       duration: 2,
     });
   }, []);
@@ -69,7 +69,7 @@ const Faq = () => {
       </div>
       <img
         src={circle}
-        className="absolute -bottom-44 right-0 w-[200px] hidden lg:block"
+        className="absolute -bottom-44 right-0 w-[250px] hidden lg:block"
         id="circle2"
       />
     </div>
