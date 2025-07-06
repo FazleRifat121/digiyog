@@ -57,7 +57,7 @@ const AppAd = () => {
     );
   }, []);
   return (
-    <div className="relative bg-base-200 mt-10" id="appAd">
+    <div className="relative bg-[#BCDC8F] mt-10" id="appAd">
       <div className="grid items-center min-h-[770px] container mx-auto ">
         <div className="flex flex-col lg:flex-row justify-around items-center">
           <div>
