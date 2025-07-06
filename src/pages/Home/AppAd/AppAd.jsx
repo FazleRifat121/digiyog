@@ -14,7 +14,7 @@ const AppAd = () => {
             <img
               src={mobileUp}
               alt="mobileup"
-              className="absolute left-44 md:left-[400px] lg:top-0 lg:left-[340px] xl:top-0 xl:left-[600px] z-10 w-28 md:w-auto"
+              className="absolute left-52 md:left-[400px] lg:top-0 lg:left-[340px] xl:top-0 xl:left-[600px] z-10 w-32 md:w-auto"
             />
             <img
               src={bgCircle}
@@ -23,7 +23,7 @@ const AppAd = () => {
             <img
               src={mobileDown}
               alt="mobiledown"
-              className="absolute top-[200px] left-24 md:top-[300px] md:left-32 lg:top-[385px] lg:left-20 xl:top-96 xl:left-[350px] w-28 md:w-auto"
+              className="absolute top-[220px] left-20 md:top-[300px] md:left-32 lg:top-[385px] lg:left-20 xl:top-96 xl:left-[350px] w-32 md:w-auto"
             />
           </div>
           <div className="flex flex-col items-end gap-10 mt-32 xl:mt-20 xl:ml-32">
