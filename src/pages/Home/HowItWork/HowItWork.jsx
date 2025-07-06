@@ -63,7 +63,7 @@ const HowItWork = () => {
       <img
         src={circle}
         alt="circle"
-        className="absolute top-44  w-[300px] z-0 pointer-events-none hidden md:block"
+        className="absolute top-44  w-[300px] z-0 pointer-events-none hidden lg:block"
         id="circle"
       />
     </div>

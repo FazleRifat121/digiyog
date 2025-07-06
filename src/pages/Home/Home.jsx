@@ -1,4 +1,6 @@
 import Navbar from "../../shared/Navbar/Navbar";
+import ClientReviews from "./ClientReviews/ClientReviews";
+import Faq from "./ClientReviews/Faq";
 import Hero from "./Hero/Hero";
 import HowItWork from "./HowItWork/HowItWork";
 import WhyDigiyog from "./WhyDigiyog/WhyDigiyog";
@@ -14,6 +16,8 @@ const Home = () => {
       </div>
       <HowItWork />
       <WhyDigiyog />
+      <ClientReviews />
+      <Faq />
     </div>
   );
 };

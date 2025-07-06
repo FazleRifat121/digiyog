@@ -52,7 +52,7 @@ const WhyDigiyog = () => {
     tl.from("#firstCardImg", {
       x: -40,
       opacity: 0,
-      duration: 1,
+      duration: 0.5,
       ease: "power1.out",
     })
       .from(
@@ -60,7 +60,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.04,
           ease: "expo.out",
         },
         "+=0.1"
@@ -80,7 +80,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.3,
+          duration: 0.04,
           ease: "power2.out",
         },
         "+=0.1"
@@ -100,7 +100,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.04,
           ease: "expo.out",
         },
         "+=0.1"
@@ -110,7 +110,7 @@ const WhyDigiyog = () => {
         {
           x: -2,
           opacity: 0,
-          duration: 0.7,
+          duration: 0.4,
           ease: "power1.out",
         },
         "+=0.1"
@@ -120,7 +120,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.3,
+          duration: 0.04,
           ease: "power2.out",
         },
         "+=0.1"
@@ -140,7 +140,7 @@ const WhyDigiyog = () => {
         {
           x: 40,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.04,
           ease: "expo.out",
         },
         "+=0.1"
@@ -150,7 +150,7 @@ const WhyDigiyog = () => {
         {
           x: 2,
           opacity: 0,
-          duration: 0.7,
+          duration: 0.4,
           ease: "power1.out",
         },
         "+=0.1"
@@ -160,7 +160,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.3,
+          duration: 0.04,
           ease: "power2.out",
         },
         "+=0.1"
@@ -180,7 +180,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.04,
           ease: "expo.out",
         },
         "+=0.1"
@@ -190,7 +190,7 @@ const WhyDigiyog = () => {
         {
           x: -2,
           opacity: 0,
-          duration: 0.7,
+          duration: 0.4,
           ease: "power1.out",
         },
         "+=0.1"
@@ -200,7 +200,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.3,
+          duration: 0.04,
           ease: "power2.out",
         },
         "+=0.1"
@@ -220,7 +220,7 @@ const WhyDigiyog = () => {
         {
           x: 40,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.04,
           ease: "expo.out",
         },
         "+=0.1"
@@ -230,7 +230,7 @@ const WhyDigiyog = () => {
         {
           x: 2,
           opacity: 0,
-          duration: 0.7,
+          duration: 0.4,
           ease: "power1.out",
         },
         "+=0.1"
@@ -240,7 +240,7 @@ const WhyDigiyog = () => {
         {
           y: -30,
           opacity: 0,
-          duration: 0.3,
+          duration: 0.04,
           ease: "power2.out",
         },
         "+=0.1"
@@ -260,7 +260,7 @@ const WhyDigiyog = () => {
         {
           x: -40,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.04,
           ease: "expo.out",
         },
         "+=0.1"
@@ -268,7 +268,7 @@ const WhyDigiyog = () => {
       .from("#sixthCardImg", {
         x: -2,
         opacity: 0,
-        duration: 0.7,
+        duration: 0.4,
         ease: "power1.out",
       });
   }, []);
