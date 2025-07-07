@@ -9,7 +9,7 @@ import WhyDigiyog from "./WhyDigiyog/WhyDigiyog";
 const Home = () => {
   return (
     <div>
-      <div className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#06582C]">
+      <div className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#06582C] ">
         <div className="max-w-[1200px] mx-auto p-4">
           <Navbar />
           <Hero />

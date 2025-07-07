@@ -32,15 +32,15 @@ const HowItWork = () => {
     const firstThree = words.slice(0, 4).join(" ");
     const rest = words.slice(3).join(" ");
     return (
-      <div className="text-3xl w-80 text-green-900">
-        <span className="font-semibold">{firstThree}</span>{" "}
-        <span className="font-normal">{rest}</span>
+      <div className="text-3xl w-96 text-green-900">
+        <span className="font-semibold font-montRegular">{firstThree}</span>{" "}
+        <span className="font-normal font-montRegular">{rest}</span>
       </div>
     );
   };
 
   return (
-    <div className="bg-[#06582C] relative">
+    <div className="bg-[#06582C] relative font-montHeavy">
       <div className="container mx-auto p-4">
         <h1 className="text-4xl md:text-left text-center text-white my-7">
           How it works
@@ -64,7 +64,7 @@ const HowItWork = () => {
                   (faq.step === 1 ? (
                     formatFirstThreeWords(faq.show)
                   ) : (
-                    <div className=" text-3xl w-80 text-green-900">
+                    <div className=" text-3xl w-96 text-green-900 font-montRegular">
                       {faq.show}
                     </div>
                   ))}
@@ -75,7 +75,7 @@ const HowItWork = () => {
             <img
               src={howPhone}
               alt="phone img"
-              className="lg:absolute top-[163px] left-[600px] xl:left-[800px] 2xl:left-[1200px]"
+              className="lg:absolute top-[157px] left-[600px] xl:left-[800px] 2xl:left-[1200px]"
             />
           </div>
         </div>

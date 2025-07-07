@@ -3,14 +3,50 @@
   themes: light --default;
 }
 @font-face {
+  font-family: "Mont Regular";
+  src: url("/fonts/Mont-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont Regular";
+  src: url("/fonts/Mont-RegularItalic.otf") format("truetype");
+}
+@font-face {
   font-family: "Mont Light";
-  src: url("/fonts/Mont-ExtraLightDEMO.otf") format("truetype");
+  src: url("/fonts/Mont-Black.otf") format("truetype");
 }
 @font-face {
   font-family: "Mont Heavy";
-  src: url("/fonts/Mont-HeavyDemo.otf") format("truetype");
+  src: url("/fonts/Mont-SemiBold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont Italic";
+  src: url("/fonts/Mont-SemiBoldItalic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont HItalic";
+  src: url("/fonts/Mont-HairlineItalic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont HeavyItalic";
+  src: url("/fonts/Mont-HeavyItalic.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont HeavyItalic";
+  src: url("/fonts/Mont-BoldItalic.otf") format("truetype");
 }
 @theme {
   --font-montLight: "Mont Light", sans-serif;
   --font-montHeavy: "Mont Heavy", sans-serif;
+  --font-montItalic: "Mont Italic", sans-serif;
+  --font-montHItalic: "Mont HItalic", sans-serif;
+  --font-montHeavyItalic: "Mont HeavyItalic", sans-serif;
+  --font-montBoldItalic: "Mont BoldItalic", sans-serif;
+  --font-montRegular: "Mont Regular", sans-serif;
+  --font-montRegularItalic: "Mont RegularItalic", sans-serif;
+}
+
+@utility whyBg {
+  background-image: url("/images/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
