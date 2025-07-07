@@ -1,71 +1,85 @@
-import { useEffect, useState } from "react";
-import circle from "../../../assets/howitworks/circle.png";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { useState } from "react";
+import howPhone from "../../../assets/howitworks/howPhone.png";
+
+const faqs = [
+  {
+    step: 1,
+    badge: "Choose a Property",
+    show: "Land, flats, or resorts -  handpicked, legally verified.",
+  },
+  {
+    step: 2,
+    badge: "Invest from Just 500 Taka",
+    show: "Buy a fractional share secured by smart contract.",
+  },
+  {
+    step: 3,
+    badge: "Earn Rental Income or ROI",
+    show: "Get monthly rental or earn on appreciation when sold.",
+  },
+  {
+    step: 4,
+    badge: "Sell Anytime",
+    show: "Sell shares in our secondary market or to Digiyog.",
+  },
+];
 
 const HowItWork = () => {
-  const [data, setData] = useState([]);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  useGSAP(() => {
-    gsap.from("#circle", {
-      scrollTrigger: {
-        trigger: "#circle",
-        start: "top 80%",
-        toggleActions: "restart",
-        scrub: true,
-      },
-      x: -100,
-      duration: 2,
-    });
-  }, []);
-  useEffect(() => {
-    fetch("/howitworks.json")
-      .then((response) => response.json())
-      .then((json) => setData(json))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  const formatFirstThreeWords = (text) => {
+    const words = text.trim().split(" ");
+    const firstThree = words.slice(0, 4).join(" ");
+    const rest = words.slice(3).join(" ");
+    return (
+      <div className="text-3xl w-80 text-green-900">
+        <span className="font-semibold">{firstThree}</span>{" "}
+        <span className="font-normal">{rest}</span>
+      </div>
+    );
+  };
+
   return (
-    <div className="relative ">
-      <div className="container mx-auto p-4 mt-10 relative z-10">
-        <h1 className="text-5xl text-center font-montHeavy font-bold">
-          How It Works
+    <div className="bg-[#06582C] relative">
+      <div className="container mx-auto p-4">
+        <h1 className="text-4xl md:text-left text-center text-white my-7">
+          How it works
         </h1>
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 shadow-2xl px-4 py-10 md:px-10 md:py-14 lg:px-16 lg:py-20 rounded-2xl bg-white z-10">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="relative w-full md:w-72 h-56 bg-gray-100 rounded-xl p-6 pt-12 shadow-md mt-5 md:mt-0"
-            >
+        <div className="bg-[#BCDC8F] p-5 rounded-3xl flex items-center flex-col-reverse lg:block ">
+          <div className="space-y-2 lg:ml-20">
+            {faqs.map((faq, index) => (
               <div
-                className={`absolute -top-4 left-6 ${item.color} text-black px-7 rounded-b-[10px] py-1 rounded-md font-semibold text-sm shadow`}
+                key={index}
+                className="p-4 rounded-md transition-all duration-200 hover:cursor-pointer"
+                onMouseEnter={() => setActiveIndex(index)}
               >
-                Step
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="text-5xl font-bold text-black">{item.step}</div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-black">
-                    {item.title}
-                  </h3>
-                  <p className="text-md mt-1 text-gray-700">
-                    {item.description}
-                  </p>
+                <h3 className="font-semibold text-green-900">
+                  Step {faq.step}
+                </h3>
+                <div className="badge bg-green-900 text-white border-none rounded-2xl">
+                  {faq.badge}
                 </div>
+
+                {activeIndex === index &&
+                  (faq.step === 1 ? (
+                    formatFirstThreeWords(faq.show)
+                  ) : (
+                    <div className=" text-3xl w-80 text-green-900">
+                      {faq.show}
+                    </div>
+                  ))}
               </div>
-              <div
-                className={`w-20 left-3 h-28 absolute -bottom-8 ${item.color} rounded-md mt-6`}
-              ></div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div>
+            <img
+              src={howPhone}
+              alt="phone img"
+              className="lg:absolute top-[163px] left-[600px] xl:left-[800px] 2xl:left-[1200px]"
+            />
+          </div>
         </div>
       </div>
-
-      <img
-        src={circle}
-        alt="circle"
-        className="absolute top-44  w-[300px] z-0 pointer-events-none hidden lg:block"
-        id="circle"
-      />
     </div>
   );
 };

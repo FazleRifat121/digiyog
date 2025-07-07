@@ -273,7 +273,7 @@ const WhyDigiyog = () => {
       });
   }, []);
   return (
-    <div className="bg-green-900 relative mt-10  " id="why">
+    <div className="bg-[#06582C] relative  " id="why">
       <div className="container mx-auto p-4 ">
         <h1 className=" text-white text-5xl text-center font-montHeavy font-bold mt-10">
           Why Digiyog?

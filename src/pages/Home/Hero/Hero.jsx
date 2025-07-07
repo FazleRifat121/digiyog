@@ -58,9 +58,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="mb-52 overflow-hidden">
       <div className="flex justify-around gap-10 items-center flex-col lg:flex-row-reverse">
-        <div className="relative w-[500px]">
+        <div className="relative w-[500px] pb-20">
           <img
             src={leftCircle}
             alt="left-circle"
@@ -80,7 +80,7 @@ const Hero = () => {
           <img
             src={rightCircle}
             alt="right-circle"
-            className="absolute -bottom-8 right-13 md:-right-8  w-28 md:w-auto"
+            className="absolute bottom-4 right-13 md:-right-8  w-28 md:w-auto"
             id="rightCircle"
           />
         </div>
