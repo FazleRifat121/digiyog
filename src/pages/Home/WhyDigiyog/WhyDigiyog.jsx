@@ -85,7 +85,7 @@ const WhyDigiyog = () => {
               </div>
             </div>
             <div className="relative justify-end">
-              <img src={halfCircle} className="absolute z-0 top-32" />
+              <img src={halfCircle} className="absolute z-0 top-28 md:top-32" />
               <img src={building} alt="building" className="relative" />
             </div>
           </div>
@@ -93,12 +93,12 @@ const WhyDigiyog = () => {
       </div>
       <img
         src={rectangle1}
-        className="lg:absolute lg:top-20 lg:left-32 xl:top-24 xl:left-80 -z-10 hidden lg:block"
+        className="lg:absolute lg:top-14 lg:left-44 xl:top-[70px] xl:left-80 2xl:top-52 2xl:left-80 -z-10 hidden lg:block"
         alt=""
       />
       <img
         src={rectangle2}
-        className="lg:absolute top-24 right-0 -z-10 hidden lg:block"
+        className="lg:absolute top-24 right-0 2xl:top-44 -z-10 hidden lg:block "
         alt=""
       />
     </div>
