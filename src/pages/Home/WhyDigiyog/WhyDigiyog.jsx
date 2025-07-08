@@ -8,10 +8,100 @@ import secondary from "../../../assets/whydigiyog/secondary.png";
 import seller from "../../../assets/whydigiyog/seller.png";
 import rectangle1 from "../../../assets/whydigiyog/Rectangle 217.png";
 import rectangle2 from "../../../assets/whydigiyog/Rectangle 218.png";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const WhyDigiyog = () => {
+  useGSAP(() => {
+    const first = gsap.utils.toArray("#firstGrid > div");
+    const second = gsap.utils.toArray("#secondGrid > div");
+    const third = gsap.utils.toArray("#thirdGrid > div");
+
+    gsap.set([...first, ...second, ...third], { x: -50, opacity: 0 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#whybg",
+        start: "top 40%",
+        toggleActions: "restart none none none",
+      },
+    });
+
+    tl.to(first, {
+      x: 0,
+      opacity: 1,
+      stagger: 0.2,
+      duration: 0.6,
+      ease: "power2.out",
+    })
+      .to(
+        second,
+        {
+          x: 0,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.6,
+          ease: "power2.out",
+        },
+        "+=0.2"
+      )
+      .to(
+        third,
+        {
+          x: 0,
+          opacity: 1,
+          stagger: 0.2,
+          duration: 0.6,
+          ease: "power2.out",
+        },
+        "+=0.2"
+      );
+    gsap.from("#halfCircle", {
+      scrollTrigger: {
+        trigger: "#whybg",
+        start: "top 80%",
+        toggleActions: "restart none none none",
+      },
+      x: -100,
+      duration: 2,
+      opacity: 0,
+      ease: "power2.out",
+    });
+    gsap.from("#building", {
+      scrollTrigger: {
+        trigger: "#whybg",
+        start: "top 80%",
+        toggleActions: "restart none none none",
+      },
+      x: 100,
+      duration: 2,
+      opacity: 0,
+      ease: "power2.out",
+    });
+    gsap.from("#rectangle1", {
+      scrollTrigger: {
+        trigger: "#whybg",
+        start: "top 160%",
+        scrub: true,
+      },
+      y: 100,
+      duration: 2,
+      ease: "power2.out",
+    });
+
+    gsap.from("#rectangle2", {
+      scrollTrigger: {
+        trigger: "#whybg",
+        start: "top 160%",
+        scrub: true,
+      },
+      y: 100,
+      duration: 2,
+      ease: "power2.out",
+    });
+  }, []);
   return (
-    <div className="relative z-10">
+    <div className="relative z-10" id="whybg">
       <div className="whyBg lg:mt-32 ">
         <div className="container mx-auto p-4">
           <h1 className="text-4xl md:text-left text-center font-montSemiBold lg:mt-96 text-white lg:text-black mt-32">
@@ -20,7 +110,10 @@ const WhyDigiyog = () => {
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-5  lg:-mt-5 ">
             <div className="grid gap-4">
               {/* first row */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                id="firstGrid"
+              >
                 {/* first card */}
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07] h-full">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl h-full">
@@ -51,7 +144,10 @@ const WhyDigiyog = () => {
                 </div>
               </div>
               {/* second row  */}
-              <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div
+                className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                id="secondGrid"
+              >
                 {/* first card */}
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07]">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl">
@@ -72,7 +168,10 @@ const WhyDigiyog = () => {
                 </div>
               </div>
               {/* third row  */}
-              <div className="grid grid-col-1 md:grid-cols-3 gap-4 ">
+              <div
+                className="grid grid-col-1 md:grid-cols-3 gap-4 "
+                id="thirdGrid"
+              >
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07]">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl">
                     <img src={secondary} alt="Secondary Marketplace" />
@@ -85,21 +184,30 @@ const WhyDigiyog = () => {
               </div>
             </div>
             <div className="relative justify-end">
-              <img src={halfCircle} className="absolute z-0 top-28 md:top-32" />
-              <img src={building} alt="building" className="relative" />
+              <img
+                src={halfCircle}
+                className="absolute z-0 top-28 md:top-32"
+                id="halfCircle"
+              />
+              <img
+                src={building}
+                alt="building"
+                className="relative"
+                id="building"
+              />
             </div>
           </div>
         </div>
       </div>
       <img
         src={rectangle1}
-        className="lg:absolute lg:top-14 lg:left-44 xl:top-[70px] xl:left-80 2xl:top-52 2xl:left-80 -z-10 hidden lg:block"
-        alt=""
+        className="lg:absolute lg:top-14 lg:left-44 xl:top-[70px] xl:left-80 2xl:top-24 2xl:left-80 -z-10 hidden lg:block"
+        id="rectangle1"
       />
       <img
         src={rectangle2}
-        className="lg:absolute top-24 right-0 2xl:top-44 -z-10 hidden lg:block "
-        alt=""
+        className="lg:absolute top-24 right-0 2xl:top-24 -z-10 hidden lg:block "
+        id="rectangle2"
       />
     </div>
   );

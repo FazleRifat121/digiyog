@@ -2,7 +2,7 @@ import { IoMdStar } from "react-icons/io";
 import { IoMdArrowDropright } from "react-icons/io";
 const ClientReviews = () => {
   return (
-    <div className="bg-gradient-to-b from-[#8EC63F] to-[#FFFFFF] p-4">
+    <div className=" p-4">
       <div>
         <h2 className=" text-5xl text-center font-montHeavy font-bold mt-10">
           Client Reviews
