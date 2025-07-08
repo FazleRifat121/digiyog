@@ -4,15 +4,17 @@ import gsap from "gsap";
 import { Link } from "react-router";
 const Faq = () => {
   useGSAP(() => {
-    gsap.from("#circle2", {
+    gsap.from("#faqCards > div", {
       scrollTrigger: {
-        trigger: "#circle2",
+        trigger: "#faqCards",
         start: "top 80%",
-        toggleActions: "restart",
-        scrub: true,
+        toggleActions: "restart none none none",
       },
-      x: 100,
-      duration: 2,
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out",
     });
   }, []);
   return (
@@ -24,7 +26,7 @@ const Faq = () => {
               Frequently Asked Questions
             </h1>
           </div>
-          <div className="mt-20">
+          <div className="mt-20" id="faqCards">
             <div className="collapse collapse-arrow bg-base-100 border border-base-300 my-3">
               <input type="radio" name="my-accordion-2" defaultChecked />
               <div className="collapse-title font-semibold">

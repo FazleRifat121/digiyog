@@ -1,6 +1,22 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { IoMdStar } from "react-icons/io";
 import { IoMdArrowDropright } from "react-icons/io";
 const ClientReviews = () => {
+  useGSAP(() => {
+    gsap.from("#reviewCards > div", {
+      scrollTrigger: {
+        trigger: "#reviewCards",
+        start: "top 80%",
+        toggleActions: "restart none none none",
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1.5,
+      stagger: 0.2,
+      ease: "power2.out",
+    });
+  }, []);
   return (
     <div className=" p-4">
       <div>
@@ -8,7 +24,10 @@ const ClientReviews = () => {
           Client Reviews
         </h2>
 
-        <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20">
+        <div
+          className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20"
+          id="reviewCards"
+        >
           {/* firstCard */}
           <div className="max-w-sm h-56 p-6 bg-green-800 text-white rounded-2xl relative lg:ml-10">
             <div className="absolute top-4 right-4 flex gap-1 text-yellow-400">
