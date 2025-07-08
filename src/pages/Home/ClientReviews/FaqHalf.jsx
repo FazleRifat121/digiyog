@@ -7,7 +7,7 @@ const FaqHalf = () => {
         <div className="flex items-center justify-around flex-col lg:flex-row-reverse gap-5">
           <img src={circle} className="w-[300px]" />
           <div className="lg:w-[500px] w-auto">
-            <p className="py-6 text-white font-montRegular">
+            <p className="py-6 text-white font-montRegularg">
               Your investment shares are digitally secured on the blockchain.
               That means no one—not even us—can change or manipulate your
               ownership once recorded. This system is future-proof, scalable,
