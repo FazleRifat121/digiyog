@@ -15,11 +15,11 @@
   src: url("/fonts/Mont-Black.otf") format("truetype");
 }
 @font-face {
-  font-family: "Mont Heavy";
+  font-family: "Mont SemiBold";
   src: url("/fonts/Mont-SemiBold.otf") format("truetype");
 }
 @font-face {
-  font-family: "Mont Italic";
+  font-family: "Mont SemiItalic";
   src: url("/fonts/Mont-SemiBoldItalic.otf") format("truetype");
 }
 @font-face {
@@ -36,8 +36,8 @@
 }
 @theme {
   --font-montLight: "Mont Light", sans-serif;
-  --font-montHeavy: "Mont Heavy", sans-serif;
-  --font-montItalic: "Mont Italic", sans-serif;
+  --font-montSemiBold: "Mont SemiBold", sans-serif;
+  --font-montSemiItalic: "Mont SemiItalic", sans-serif;
   --font-montHItalic: "Mont HItalic", sans-serif;
   --font-montHeavyItalic: "Mont HeavyItalic", sans-serif;
   --font-montBoldItalic: "Mont BoldItalic", sans-serif;

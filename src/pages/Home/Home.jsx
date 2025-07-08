@@ -15,8 +15,10 @@ const Home = () => {
           <Hero />
         </div>
       </div>
-      <HowItWork />
-      <WhyDigiyog />
+      <div className="bg-green-900">
+        <HowItWork />
+        <WhyDigiyog />
+      </div>
       <ClientReviews />
       <Faq />
       <AppAd />

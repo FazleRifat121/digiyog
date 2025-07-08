@@ -46,7 +46,7 @@ const HowItWork = () => {
           How it works
         </h1>
         <div className="bg-[#BCDC8F] p-5 rounded-3xl flex items-center flex-col-reverse lg:block ">
-          <div className="space-y-2 lg:ml-20">
+          <div className="space-y-2 ml-15 lg:ml-20">
             {faqs.map((faq, index) => (
               <div
                 key={index}
