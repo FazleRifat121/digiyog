@@ -2,6 +2,7 @@ import Navbar from "../../shared/Navbar/Navbar";
 import AppAd from "./AppAd/AppAd";
 import ClientReviews from "./ClientReviews/ClientReviews";
 import Faq from "./ClientReviews/Faq";
+import FaqHalf from "./ClientReviews/FaqHalf";
 import Hero from "./Hero/Hero";
 import HowItWork from "./HowItWork/HowItWork";
 import WhyDigiyog from "./WhyDigiyog/WhyDigiyog";
@@ -19,8 +20,15 @@ const Home = () => {
         <HowItWork />
         <WhyDigiyog />
       </div>
-      <ClientReviews />
-      <Faq />
+      <div className="relative">
+        <ClientReviews />
+        <div className="lg:absolute lg:left-5 lg:top-[900px] xl:left-32 2xl:top-[700px] 2xl:left-[400px] lg:w-[1000px] xl:w-[1200px]">
+          <div>
+            <Faq />
+          </div>
+        </div>
+        <FaqHalf />
+      </div>
       <AppAd />
     </div>
   );

@@ -18,11 +18,11 @@ const Faq = () => {
     });
   }, []);
   return (
-    <div className="relative ">
+    <div className="relative my-5 lg:my-0 p-4 ">
       <div className="container mx-auto p-4 bg-green-800 rounded-3xl relative z-10">
         <div className="flex flex-col items-center justify-around lg:flex-row ">
           <div className="lg:w-52 text-center lg:text-left mt-20">
-            <h1 className="text-6xl text-white font-bold leading-15 ">
+            <h1 className="text-6xl lg:text-4xl 2xl:text-6xl text-white font-bold leading-15 ">
               Frequently Asked Questions
             </h1>
           </div>

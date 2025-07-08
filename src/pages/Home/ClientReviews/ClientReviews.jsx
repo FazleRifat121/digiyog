@@ -18,7 +18,7 @@ const ClientReviews = () => {
     });
   }, []);
   return (
-    <div className=" p-4">
+    <div className=" p-4 lg:min-h-screen">
       <div>
         <h2 className=" text-5xl text-center font-montHeavy font-bold mt-10">
           Client Reviews
