@@ -9,7 +9,7 @@ const OurVision = () => {
       <div className="container mx-auto p-4 ">
         <div className="flex items center justify-between flex-col-reverse lg:flex-row mt-20 gap-10">
           <div className="text-white space-y-5">
-            <h1 className="text-white text-4xl font-montSemiBold">
+            <h1 className="text-white text-7xl font-montSemiBold">
               Our Vision
             </h1>
             <p className="text-xl w-[500px]">

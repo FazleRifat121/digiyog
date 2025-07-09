@@ -4,7 +4,7 @@ const WhatWeDo = () => {
     <div>
       <div className=" py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6 ">
+          <h2 className="text-7xl font-bold mb-6 ">
             What <br /> We Do
           </h2>
           <p className="text-lg w-[490px]">

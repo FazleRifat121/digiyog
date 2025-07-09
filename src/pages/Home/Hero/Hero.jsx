@@ -87,13 +87,13 @@ const Hero = () => {
         <div className="md:w-[500px] text-white">
           <h1
             ref={titleRef}
-            className="md:text-7xl text-5xl  font-montBlack lg:mt-20"
+            className="md:text-6xl text-5xl font-montHeavy   lg:mt-20"
           >
-            <span className="font-montHeavy">
-              Wanna Own Real Estate With Just
-            </span>{" "}
+            Wanna Own Real Estate With Just
             <br />
-            500 Taka?
+            <span className="md:text-7xl text-5xl font-montBlack">
+              500 Taka?
+            </span>
           </h1>
           <p ref={paraRef} className="py-6 font-montRegular  text-4xl">
             Start investing in land, flats & resorts. Legally verified.
