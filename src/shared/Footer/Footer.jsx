@@ -2,13 +2,17 @@ import { Link } from "react-router";
 import apple from "../../assets/hero/apple.png";
 import play from "../../assets/hero/play.png";
 
-const Footer = () => {
+const Footer = ({ color }) => {
   return (
-    <div className="bg-[#1E1E1E] text-neutral-conten">
+    <div className={`${color} text-neutral-conten`}>
       <div className="container mx-auto p-4">
-        <footer className="footer px-10 py-8 bg-[#1E1E1E] text-neutral-content grid-cols-3">
+        <footer
+          className={`footer px-10 py-8 ${color} text-neutral-content grid-cols-3`}
+        >
           <div>
-            <img src="/footer.svg" alt="logo" className="w-40 mb-2" />
+            <Link to="/">
+              <img src="/footer.svg" alt="logo" className="w-40 mb-2" />
+            </Link>
 
             <div className="flex gap-2 mt-4">
               <img src={apple} alt="App Store" className="w-8 h-8" />

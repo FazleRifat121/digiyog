@@ -1,12 +1,13 @@
+import { Link } from "react-router";
 import logo from "/logo.svg";
 
 const Navbar = () => {
   return (
     <div className="navbar container mx-auto p-4 bg-transparent">
       <div className="navbar-start">
-        <a>
+        <Link to="/">
           <img src={logo} alt="logo" />
-        </a>
+        </Link>
       </div>
     </div>
   );

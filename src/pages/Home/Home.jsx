@@ -1,3 +1,4 @@
+import Footer from "../../shared/Footer/Footer";
 import Navbar from "../../shared/Navbar/Navbar";
 import AppAd from "./AppAd/AppAd";
 import ClientReviews from "./ClientReviews/ClientReviews";
@@ -34,6 +35,7 @@ const Home = () => {
       {/* <WhatWeDo /> */}
       <OurVision />
       <AppAd />
+      <Footer color="bg-[#1E1E1E]" />
     </div>
   );
 };
