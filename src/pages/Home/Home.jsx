@@ -30,9 +30,11 @@ const Home = () => {
             <Faq />
           </div>
         </div>
-        <FaqHalf />
+        <div className="bg-[#BCDC8F]">
+          <FaqHalf />
+          <WhatWeDo />
+        </div>
       </div>
-      {/* <WhatWeDo /> */}
       <OurVision />
       <AppAd />
       <Footer color="bg-[#1E1E1E]" />

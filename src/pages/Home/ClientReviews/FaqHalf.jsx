@@ -1,7 +1,7 @@
 import circle from "../../../assets/faq/faqCircle.png";
 const FaqHalf = () => {
   return (
-    <div className="bg-green-900  flex items-center">
+    <div className="faqBg min-h-screen flex items-center">
       <div className="container mx-auto p-4 lg:mt-64">
         <div className="flex items-center justify-center flex-col lg:flex-row-reverse gap-5 mt-10">
           <img src={circle} className="w-[300px] lg:w-auto" />
