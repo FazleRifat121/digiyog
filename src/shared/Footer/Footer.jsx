@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import apple from "../../assets/hero/apple.png";
 import play from "../../assets/hero/play.png";
 
@@ -24,8 +25,10 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col gap-2">
-              <a className="link link-hover">Privacy Policy</a>
-              <a className="link link-hover">Terms</a>
+              <Link className="link link-hover">Privacy Policy</Link>
+              <Link to="/terms" className="link link-hover">
+                Terms
+              </Link>
               <a className="link link-hover">Legal</a>
             </div>
 
