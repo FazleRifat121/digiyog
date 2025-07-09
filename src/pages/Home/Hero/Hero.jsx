@@ -74,7 +74,7 @@ const Hero = () => {
           />
           <img
             src={phone}
-            className="relative left-14 max-w-sm rounded-lg"
+            className="relative left-14 max-w-sm md:max-w-xl rounded-lg"
             id="phone"
           />
           <img
@@ -87,12 +87,15 @@ const Hero = () => {
         <div className="md:w-[500px] text-white">
           <h1
             ref={titleRef}
-            className="md:text-6xl text-5xl  font-montRegularItalic lg:mt-20"
+            className="md:text-7xl text-5xl  font-montBlack lg:mt-20"
           >
-            Wanna Own Real Estate With Just <br />
+            <span className="font-montHeavy">
+              Wanna Own Real Estate With Just
+            </span>{" "}
+            <br />
             500 Taka?
           </h1>
-          <p ref={paraRef} className="py-6 font-montRegular  text-xl">
+          <p ref={paraRef} className="py-6 font-montRegular  text-4xl">
             Start investing in land, flats & resorts. Legally verified.
             Blockchain secured. Earn rental income & grow your wealth.
           </p>

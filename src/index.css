@@ -7,12 +7,16 @@
   src: url("/fonts/Mont-Regular.otf") format("truetype");
 }
 @font-face {
-  font-family: "Mont Regular";
+  font-family: "Mont RegularItalic";
   src: url("/fonts/Mont-RegularItalic.otf") format("truetype");
 }
 @font-face {
   font-family: "Mont Light";
   src: url("/fonts/Mont-Black.otf") format("truetype");
+}
+@font-face {
+  font-family: "Mont Heavy";
+  src: url("/fonts/Mont-Heavy.otf") format("truetype");
 }
 @font-face {
   font-family: "Mont SemiBold";
@@ -34,6 +38,10 @@
   font-family: "Mont HeavyItalic";
   src: url("/fonts/Mont-BoldItalic.otf") format("truetype");
 }
+@font-face {
+  font-family: "Mont Black";
+  src: url("/fonts/Mont-Black.otf") format("truetype");
+}
 @theme {
   --font-montLight: "Mont Light", sans-serif;
   --font-montSemiBold: "Mont SemiBold", sans-serif;
@@ -43,6 +51,8 @@
   --font-montBoldItalic: "Mont BoldItalic", sans-serif;
   --font-montRegular: "Mont Regular", sans-serif;
   --font-montRegularItalic: "Mont RegularItalic", sans-serif;
+  --font-montHeavy: "Mont Heavy", sans-serif;
+  --font-montBlack: "Mont Black", sans-serif;
 }
 
 @utility whyBg {
