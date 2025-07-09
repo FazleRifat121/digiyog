@@ -1,4 +1,4 @@
-import circle from "../../../assets/faq/group 121.png";
+import circle from "../../../assets/faq/faqCircle.png";
 const FaqHalf = () => {
   return (
     <div className="bg-green-900  flex items-center">
