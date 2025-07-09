@@ -1,7 +1,7 @@
 import rect from "../../../assets/ourvision/rect.png";
-import mask1 from "../../../assets/ourvision/maskgroup.png";
-import mask2 from "../../../assets/ourvision/maskgroup1.png";
-import mask3 from "../../../assets/ourvision/maskgroup2.png";
+import mask1 from "../../../assets/ourvision/Maskgroup.png";
+import mask2 from "../../../assets/ourvision/Maskgroup1.png";
+import mask3 from "../../../assets/ourvision/Maskgroup2.png";
 import houses from "../../../assets/ourvision/houses.png";
 const OurVision = () => {
   return (
