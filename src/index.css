@@ -50,3 +50,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+@utility faqBg {
+  background-image: url("/images/faq-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

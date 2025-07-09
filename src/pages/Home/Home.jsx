@@ -5,6 +5,8 @@ import Faq from "./ClientReviews/Faq";
 import FaqHalf from "./ClientReviews/FaqHalf";
 import Hero from "./Hero/Hero";
 import HowItWork from "./HowItWork/HowItWork";
+import OurVision from "./OurVision/OurVision";
+import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import WhyDigiyog from "./WhyDigiyog/WhyDigiyog";
 
 const Home = () => {
@@ -29,6 +31,8 @@ const Home = () => {
         </div>
         <FaqHalf />
       </div>
+      {/* <WhatWeDo /> */}
+      <OurVision />
       <AppAd />
     </div>
   );
