@@ -5,7 +5,7 @@ import mask3 from "../../../assets/ourvision/Maskgroup2.png";
 import houses from "../../../assets/ourvision/houses.png";
 const OurVision = () => {
   return (
-    <div className="bg-green-900 ">
+    <div className="bg-[#06582C] ">
       <div className="container mx-auto p-4 ">
         <div className="flex items center justify-between flex-col-reverse lg:flex-row mt-20 gap-10">
           <div className="text-white space-y-5">

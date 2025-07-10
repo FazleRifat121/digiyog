@@ -70,24 +70,24 @@ const Hero = () => {
           <img
             src={greenBg}
             alt="greenBg"
-            className="absolute top-20 left-15 w-sm"
+            className="absolute top-20 xl:top-16 left-15 xl:left-10 max-w-sm xl:max-w-2xl"
           />
           <img
             src={phone}
-            className="relative left-14 max-w-sm md:max-w-xl rounded-lg"
+            className="relative left-14 xl:left-20 max-w-sm md:max-w-2xl rounded-lg"
             id="phone"
           />
           <img
             src={rightCircle}
             alt="right-circle"
-            className="absolute bottom-4 right-13 md:-right-8  w-28 md:w-auto"
+            className="absolute bottom-4 xl:-bottom-0 right-13 md:-right-8  w-28 md:w-auto"
             id="rightCircle"
           />
         </div>
         <div className="md:w-[500px] text-white">
           <h1
             ref={titleRef}
-            className="md:text-6xl text-5xl font-montHeavy   lg:mt-20"
+            className="md:text-6xl text-5xl font-montHeavy text-white  lg:mt-20"
           >
             Wanna Own Real Estate With Just
             <br />
@@ -95,9 +95,9 @@ const Hero = () => {
               500 Taka?
             </span>
           </h1>
-          <p ref={paraRef} className="py-6 font-montRegular  text-4xl">
+          <p ref={paraRef} className="py-6 font-montRegular  text-2xl">
             Start investing in land, flats & resorts. Legally verified.
-            Blockchain secured. Earn rental income & grow your wealth.
+            Blockchain secured. <br /> Earn rental income & grow your wealth.
           </p>
           <div
             className="flex items-center gap-5"

@@ -8,9 +8,7 @@ const WhatWeDo = () => {
     <div>
       <div className=" py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-7xl font-bold mb-6 ">
-            What <br /> We Do
-          </h2>
+          <h2 className="text-7xl font-bold mb-6 ">What We Do</h2>
           <p className="text-lg w-[490px]">
             All legal, financial, and operational tasks? We handle that. You
             simply invest, track, and earn

@@ -42,7 +42,7 @@ const HowItWork = () => {
   return (
     <div className="bg-[#06582C] relative font-montHeavy">
       <div className="container mx-auto p-4">
-        <h1 className="text-7xl md:text-left text-center text-white my-7">
+        <h1 className="text-7xl md:text-left text-center font-bold text-white my-7">
           How it works
         </h1>
         <div className="bg-[#BCDC8F] p-5 rounded-3xl flex items-center flex-col-reverse lg:block ">
@@ -56,7 +56,7 @@ const HowItWork = () => {
                 <h3 className="font-semibold text-green-900">
                   Step {faq.step}
                 </h3>
-                <div className="badge bg-green-900 text-white border-none rounded-2xl">
+                <div className="badge bg-[#06582C] text-white border-none rounded-2xl">
                   {faq.badge}
                 </div>
 

@@ -145,8 +145,8 @@ const Frequent = () => {
   };
 
   return (
-    <div className="bg-green-900">
-      <Navbar pic="/white-logo.png" />
+    <div className="bg-[#06582C]">
+      <Navbar />
       <div className="flex justify-center items-center h-[500px]">
         <h1 className="text-6xl lg:text-4xl 2xl:text-6xl text-white font-bold leading-15 w-[400px] text-center">
           Frequently Asked Questions

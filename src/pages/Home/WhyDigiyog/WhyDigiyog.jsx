@@ -104,8 +104,8 @@ const WhyDigiyog = () => {
     <div className="relative z-10" id="whybg">
       <div className="whyBg lg:mt-32 ">
         <div className="container mx-auto p-4">
-          <h1 className="text-7xl md:text-left text-center font-montSemiBold lg:mt-96  mt-32">
-            why <br /> Digiyog?
+          <h1 className="text-7xl md:text-left text-center font-bold lg:mt-96  mt-32">
+            Why Digiyog?
           </h1>
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-5  lg:-mt-5 ">
             <div className="grid gap-4 mt-20">
@@ -118,7 +118,7 @@ const WhyDigiyog = () => {
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07] h-full">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl h-full">
                     <img src={blockChain} alt="Blockchain Secured" />
-                    <h3 className="text-black ">
+                    <h3 className="text-black font-bold ">
                       Blockchain <br /> Secured
                     </h3>
                   </div>
@@ -128,7 +128,7 @@ const WhyDigiyog = () => {
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07] h-full">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl h-full">
                     <img src={halal} alt=" Halal Investment" />
-                    <h3 className="text-black  ">
+                    <h3 className="text-black font-bold  ">
                       Halal <br /> Investment
                     </h3>
                   </div>
@@ -137,7 +137,7 @@ const WhyDigiyog = () => {
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07] h-full">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl h-full">
                     <img src={roi} alt="High ROI Assets" />
-                    <h3 className="text-black ">
+                    <h3 className="text-black font-bold ">
                       High ROI <br /> Assets
                     </h3>
                   </div>
@@ -152,7 +152,7 @@ const WhyDigiyog = () => {
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07]">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl">
                     <img src={legal} alt="Legally Verified Properties" />
-                    <h3 className="text-black">
+                    <h3 className="text-black font-bold">
                       Legally Verified <br /> Properties
                     </h3>
                   </div>
@@ -161,7 +161,7 @@ const WhyDigiyog = () => {
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07]">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl">
                     <img src={seller} alt="Seller Onboarding Option" />
-                    <h3 className="text-black">
+                    <h3 className="text-black font-bold">
                       Seller Onboarding <br /> Option
                     </h3>
                   </div>
@@ -175,7 +175,7 @@ const WhyDigiyog = () => {
                 <div className="p-[2px] rounded-2xl bg-gradient-to-b from-[#006838] to-[#97FF07]">
                   <div className="flex items-center gap-4 p-4 bg-[#BCDC8F] rounded-2xl">
                     <img src={secondary} alt="Secondary Marketplace" />
-                    <h3 className="text-black">
+                    <h3 className="text-black font-bold">
                       Secondary <br />
                       Marketplace
                     </h3>

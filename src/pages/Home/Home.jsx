@@ -13,13 +13,13 @@ import WhyDigiyog from "./WhyDigiyog/WhyDigiyog";
 const Home = () => {
   return (
     <div>
-      <div className="w-full bg-gradient-to-b from-[#FFFFFF] to-[#06582C] ">
+      <div className="w-full bg-[#06582C] ">
         <div className="max-w-[1800px] mx-auto p-4">
           <Navbar />
           <Hero />
         </div>
       </div>
-      <div className="bg-green-900">
+      <div className="bg-[#06582C]">
         <HowItWork />
         <WhyDigiyog />
       </div>

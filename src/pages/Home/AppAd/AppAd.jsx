@@ -1,36 +1,13 @@
 import bgCircle from "../../../assets/appAd/bgCircle.png";
-import mobileDown from "../../../assets/appAd/mobileDown.png";
-import mobileUp from "../../../assets/appAd/mobileUp.png";
 import appComingSoon from "../../../assets/appAd/appComingSoon.png";
 import googleplay from "../../../assets/appAd/googleplay.png";
 import appstore from "../../../assets/appAd/appstore.png";
+import iphone from "../../../assets/appAd/iphone.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const AppAd = () => {
   useGSAP(() => {
-    gsap.from("#mobileUp", {
-      scrollTrigger: {
-        trigger: "#appAd",
-        start: "top 80%",
-        toggleActions: "restart none none none",
-      },
-      y: -100,
-      duration: 2,
-      opacity: 0,
-      ease: "power1.out",
-    });
-    gsap.from("#mobileDown", {
-      scrollTrigger: {
-        trigger: "#appAd",
-        start: "top center",
-        toggleActions: "restart none none none",
-      },
-      y: 100,
-      duration: 2,
-      opacity: 0,
-      ease: "power1.out",
-    });
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#appAd",
@@ -38,9 +15,16 @@ const AppAd = () => {
         toggleActions: "restart none none none",
       },
     });
+    tl.from("#iphone", {
+      duration: 1,
+
+      opacity: 0,
+      scale: 0,
+      ease: "elastic.out(1, 0.5)", // perfect for that pop feel
+    });
     tl.from("#comingSoon", {
       x: 100,
-      delay: 3,
+
       duration: 0.1,
       opacity: 0,
       ease: "power1.out",
@@ -62,21 +46,14 @@ const AppAd = () => {
         <div className="flex flex-col lg:flex-row justify-around items-center">
           <div>
             <img
-              src={mobileUp}
-              alt="mobileup"
-              className="absolute left-52 md:left-[400px] lg:top-0 lg:left-[340px] xl:top-0 xl:left-[627px] z-10 w-32 md:w-auto"
-              id="mobileUp"
-            />
-            <img
               src={bgCircle}
               className="xl:absolute xl:top-10 xl:left-[270px] z-0 w-2xl"
               id="bgCircle"
             />
             <img
-              src={mobileDown}
-              alt="mobiledown"
-              className="absolute top-[220px] left-20 md:top-[300px] md:left-32 lg:top-[385px] lg:left-20 xl:top-96 xl:left-[350px] w-32 md:w-auto"
-              id="mobileDown"
+              src={iphone}
+              className="absolute -top-2 left-16 md:top-5 md:left-44  md:w-sm lg:top-32  lg:left-28 xl:top-7  xl:left-[360px] z-10 w-[300px] xl:w-auto "
+              id="iphone"
             />
           </div>
           <div className="flex flex-col items-end gap-10 mt-32 xl:mt-20 xl:ml-32">
@@ -91,7 +68,7 @@ const AppAd = () => {
               <img
                 src={appstore}
                 alt="googleplay"
-                className="w-sm h-52"
+                className="w-sm "
                 id="appStore"
               />
             </div>

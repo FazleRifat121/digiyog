@@ -14,7 +14,10 @@ const Footer = ({ color }) => {
           className={`footer px-10 py-8 ${color} text-neutral-content grid-cols-3`}
         >
           <div>
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
               <img src="/footer.svg" alt="logo" className="w-40 mb-2" />
             </Link>
 
@@ -34,7 +37,11 @@ const Footer = ({ color }) => {
 
             <div className="flex flex-col gap-2">
               <Link className="link link-hover">Privacy Policy</Link>
-              <Link to="/terms" className="link link-hover">
+              <Link
+                to="/terms"
+                className="link link-hover"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              >
                 Terms
               </Link>
               <a className="link link-hover">Legal</a>

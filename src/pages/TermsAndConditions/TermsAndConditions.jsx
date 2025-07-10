@@ -1,12 +1,12 @@
 import Footer from "../../shared/Footer/Footer";
 import Navbar from "../../shared/Navbar/Navbar";
-
+import pic from "/logo.svg";
 const TermsAndConditions = () => {
   return (
     <div>
       <div className="bg-base-100 text-base-content min-h-screen px-6 py-10">
         <div className="xl:-ml-32">
-          <Navbar />
+          <Navbar pic={pic} />
         </div>
         <div className="container p-4 mx-auto space-y-8 ">
           <h1 className="text-4xl font-bold">
