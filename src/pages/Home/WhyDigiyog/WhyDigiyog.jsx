@@ -108,10 +108,10 @@ const WhyDigiyog = () => {
             why <br /> Digiyog?
           </h1>
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-5  lg:-mt-5 ">
-            <div className="grid gap-4">
+            <div className="grid gap-4 mt-20">
               {/* first row */}
               <div
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
                 id="firstGrid"
               >
                 {/* first card */}
@@ -183,18 +183,20 @@ const WhyDigiyog = () => {
                 </div>
               </div>
             </div>
-            <div className="relative justify-end">
-              <img
-                src={halfCircle}
-                className="absolute z-0 top-28 md:top-32"
-                id="halfCircle"
-              />
-              <img
-                src={building}
-                alt="building"
-                className="relative"
-                id="building"
-              />
+            <div className="lg:absolute right-0 bottom-0">
+              <div className="relative justify-end">
+                <img
+                  src={halfCircle}
+                  className="absolute z-0 top-28 md:top-32 2xl:w-2xl"
+                  id="halfCircle"
+                />
+                <img
+                  src={building}
+                  alt="building"
+                  className="relative 2xl:w-2xl"
+                  id="building"
+                />
+              </div>
             </div>
           </div>
         </div>

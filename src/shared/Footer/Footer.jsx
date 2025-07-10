@@ -1,6 +1,10 @@
 import { Link } from "react-router";
 import apple from "../../assets/hero/apple.png";
 import play from "../../assets/hero/play.png";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = ({ color }) => {
   return (
@@ -38,19 +42,16 @@ const Footer = ({ color }) => {
 
             <div className="grid grid-flow-col gap-4 mt-6 lg:mt-0">
               <a>
-                <i className="text-xl fab fa-reddit"></i>
+                <FaLinkedinIn className="text-xl" />
               </a>
               <a>
-                <i className="text-xl fab fa-linkedin-in"></i>
+                <FaXTwitter className="text-xl" />
               </a>
               <a>
-                <i className="text-xl fab fa-twitter"></i>
+                <AiFillInstagram className="text-xl" />
               </a>
               <a>
-                <i className="text-xl fab fa-instagram"></i>
-              </a>
-              <a>
-                <i className="text-xl fab fa-facebook"></i>
+                <FaFacebookSquare className="text-xl" />
               </a>
             </div>
           </div>

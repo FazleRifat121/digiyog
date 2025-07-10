@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "../../shared/Navbar/Navbar";
+import Footer from "../../shared/Footer/Footer";
 
 const faqs = [
   {
@@ -83,10 +84,51 @@ const investmentFaqs = [
     answer: `Digiyog accepts payments via direct bank transfers or MFS (Mobile Financial Services) platforms like <strong>bKash</strong>. After transferring the funds, you must upload a screenshot of the transaction proof to complete the process. Further details on payment methods are provided during the checkout.`,
   },
 ];
+const secondaryMarketplaceFaqs = [
+  {
+    question: "What is the secondary marketplace?",
+    answer: `The <strong>Secondary Marketplace</strong> is a trading platform where Digiyog members can buy and sell fractional shares of real estate investments with other users. This marketplace allows you to liquidate your investments or purchase additional shares without having to wait for the property to reach maturity. The marketplace provides liquidity to investors by enabling peer-to-peer transactions.`,
+  },
+  {
+    question: "Is the secondary marketplace secured?",
+    answer: `Yes, the <strong>Secondary Marketplace</strong>  is fully secured. All transactions take place between Digiyog registered users, and no third-party entities are involved. The marketplace operates under the same high-security standards as the rest of the Digiyog platform, ensuring the safety of all transactions and data.`,
+  },
+  {
+    question: "How do I sell or list my property on the secondary marketplace?",
+    answer: `<ul class="list-disc ml-10 xl:ml-20">
+    <li>Navigate to your <strong>Portfolio</strong> page.</li>
+    <li>Locate the property you wish to sell under the <strong>Invested Properties</strong> section.</li>
+    <li> Click the <strong>Sell</strong> button next to the property you want to list.</li>
+    <li>Set your desired selling price for the shares you wish to sell.</li>
+    </ul><br/>
+    Once your listing is complete, other users will be able to view and purchase your shares in the <strong>Secondary Marketplace</strong>.`,
+  },
+];
+const legalFaqs = [
+  {
+    question: "What paperwork do I receive when I invest?",
+    answer: `When you invest in fractional shares of a property on <strong>Digiyog</strong>, you will receive a receipt and a legal document that serves as proof of your ownership in the property. This document confirms your stake in the property and provides a legal record of your investment.`,
+  },
+  {
+    question: "How does Digiyog ensure that all property titles are clear?",
+    answer: `Digiyog works with a team of experienced real estate lawyers and agents to conduct thorough due diligence on all properties listed on the platform. This process includes verifying the property’s legal documents, ownership history, and transaction records. Only properties that have passed this rigorous due diligence are made available for investment. This ensures that all titles are clear and that your investment is secure.`,
+  },
+  {
+    question: "Can I verify the property deed document myself?",
+    answer: `Yes, you can verify the property deed document. To view the property deed, please send a request to <strong>Digiyog’s support team</strong> via email at <strong><a href="mailto:support@digiyog.com"">support@digiyog.com</a></strong> . You can either receive a digital copy of the deed or schedule a time to view it in person at Digiyog’s office.`,
+  },
+  {
+    question: "How do I know Digiyog is a legally registered company?",
+    answer: `Digiyog is a legally registered company with the appropriate government authorities in Bangladesh. You can contact our <strong>customer support</strong> via WhatsApp at <strong>01769991122</strong> to request a copy of Digiyog's registration documents and trade license for verification.`,
+  },
+];
 
 const Frequent = () => {
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
   const [openInvestmentIndex, setOpenInvestmentIndex] = useState(null);
+  const [opensecondaryMarketplaceFaqs, setOpensecondaryMarketplaceFaqs] =
+    useState(null);
+  const [openlegalFaqs, setOpenlegalFaqs] = useState(null);
 
   const toggleFaq = (index) => {
     setOpenFaqIndex((prev) => (prev === index ? null : index));
@@ -94,6 +136,12 @@ const Frequent = () => {
 
   const toggleInvestmentFaq = (index) => {
     setOpenInvestmentIndex((prev) => (prev === index ? null : index));
+  };
+  const togglesecondaryMarketplaceFaqs = (index) => {
+    setOpensecondaryMarketplaceFaqs((prev) => (prev === index ? null : index));
+  };
+  const togglelegalFaqs = (index) => {
+    setOpenlegalFaqs((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -105,7 +153,7 @@ const Frequent = () => {
         </h1>
       </div>
 
-      <div className="bg-white">
+      <div className="bg-white ">
         <div className="container mx-auto p-4">
           {/* first grid */}
           <div className="flex flex-wrap gap-5 mt-10 lg:mt-20">
@@ -165,8 +213,69 @@ const Frequent = () => {
               </div>
             ))}
           </div>
+          {/* third grid */}
+          <h1 className="text-3xl lg:text-4xl 2xl:text-5xl font-bold mt-10 lg:mt-20">
+            SECONDARY MARKETPLACE
+          </h1>
+          <div className="flex flex-wrap gap-5 mt-10 lg:mt-20 ">
+            {secondaryMarketplaceFaqs.map((faq, index) => (
+              <div key={index} className="w-full md:w-[calc(50%-10px)]">
+                <div
+                  className={`collapse collapse-arrow border border-base-300 bg-base-100 ${
+                    opensecondaryMarketplaceFaqs === index
+                      ? "collapse-open [&>div::after]:text-green-500"
+                      : ""
+                  }`}
+                >
+                  <div
+                    className="collapse-title font-semibold cursor-pointer"
+                    onClick={() => togglesecondaryMarketplaceFaqs(index)}
+                  >
+                    {faq.question}
+                  </div>
+                  {opensecondaryMarketplaceFaqs === index && (
+                    <div
+                      className="collapse-content text-sm"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* fourth grid */}
+          <h1 className="text-3xl lg:text-4xl 2xl:text-5xl font-bold mt-10 lg:mt-20 ">
+            LEGAL
+          </h1>
+          <div className="flex flex-wrap gap-5 mt-10 lg:mt-20 mb-20">
+            {legalFaqs.map((faq, index) => (
+              <div key={index} className="w-full md:w-[calc(50%-10px)]">
+                <div
+                  className={`collapse collapse-arrow border border-base-300 bg-base-100 ${
+                    openlegalFaqs === index
+                      ? "collapse-open [&>div::after]:text-green-500"
+                      : ""
+                  }`}
+                >
+                  <div
+                    className="collapse-title font-semibold cursor-pointer"
+                    onClick={() => togglelegalFaqs(index)}
+                  >
+                    {faq.question}
+                  </div>
+                  {openlegalFaqs === index && (
+                    <div
+                      className="collapse-content text-sm"
+                      dangerouslySetInnerHTML={{ __html: faq.answer }}
+                    />
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+      <Footer color="bg-[#006838]" />
     </div>
   );
 };
