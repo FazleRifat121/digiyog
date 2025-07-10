@@ -5,7 +5,7 @@ const FaqHalf = () => {
       <div className="container mx-auto p-4 lg:mt-64">
         <div className="flex items-center justify-between flex-col lg:flex-row-reverse gap-5 mt-10">
           <img src={circle} className="w-[300px] lg:w-auto" />
-          <div className="w-[700px] w-auto ">
+          <div className="lg:w-[700px] w-auto ">
             <h3 className="text-5xl xl:text-7xl  md:text-left font-montSemiBold text-center  mt-32 text-white ">
               Powered by Blockchain & <br />
               Smart Contracts
