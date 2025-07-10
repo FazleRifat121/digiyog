@@ -5,6 +5,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookSquare } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
 
 const Footer = ({ color }) => {
   return (
@@ -47,7 +48,10 @@ const Footer = ({ color }) => {
               <a className="link link-hover">Legal</a>
             </div>
 
-            <div className="grid grid-flow-col gap-4 mt-6 lg:mt-0">
+            <div className="grid grid-flow-col gap-2.5 md:gap-4 mt-6 lg:mt-0">
+              <a href="mailto:hello@digiyog.app">
+                <IoMdMail className="text-xl" />
+              </a>
               <a>
                 <FaLinkedinIn className="text-xl" />
               </a>
