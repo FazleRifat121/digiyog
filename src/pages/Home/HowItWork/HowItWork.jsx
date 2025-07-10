@@ -32,7 +32,7 @@ const HowItWork = () => {
     const firstThree = words.slice(0, 4).join(" ");
     const rest = words.slice(4).join(" ");
     return (
-      <div className="text-3xl w-96 text-green-900">
+      <div className="text-3xl max-w-full lg:w-96 text-green-900">
         <span className="font-semibold font-montRegular">{firstThree}</span>{" "}
         <span className="font-normal font-montRegular">{rest}</span>
       </div>
@@ -46,7 +46,7 @@ const HowItWork = () => {
           How it works
         </h1>
         <div className="bg-[#BCDC8F] p-5 rounded-3xl flex items-center flex-col-reverse lg:block ">
-          <div className="space-y-2 ml-15 lg:ml-20">
+          <div className="space-y-2 ml-0 lg:ml-20">
             {faqs.map((faq, index) => (
               <div
                 key={index}
@@ -64,7 +64,7 @@ const HowItWork = () => {
                   (faq.step === 1 ? (
                     formatFirstThreeWords(faq.show)
                   ) : (
-                    <div className=" text-3xl w-96 text-green-900 font-montRegular">
+                    <div className="text-3xl max-w-full lg:w-96 text-green-900 font-montRegular">
                       {faq.show}
                     </div>
                   ))}

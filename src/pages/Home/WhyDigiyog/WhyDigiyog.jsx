@@ -104,7 +104,7 @@ const WhyDigiyog = () => {
     <div className="relative z-10" id="whybg">
       <div className="whyBg lg:mt-32 ">
         <div className="container mx-auto p-4">
-          <h1 className="text-7xl md:text-left text-center font-montSemiBold lg:mt-96 text-white lg:text-black mt-32">
+          <h1 className="text-7xl md:text-left text-center font-montSemiBold lg:mt-96  mt-32">
             why <br /> Digiyog?
           </h1>
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-5  lg:-mt-5 ">

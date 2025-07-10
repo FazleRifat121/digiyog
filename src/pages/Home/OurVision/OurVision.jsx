@@ -12,7 +12,7 @@ const OurVision = () => {
             <h1 className="text-white text-7xl font-montSemiBold">
               Our Vision
             </h1>
-            <p className="text-xl w-[500px]">
+            <p className="text-xl lg:w-[500px]">
               We're not just building an investment app—we're building a real
               estate ecosystem. One where:
             </p>

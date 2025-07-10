@@ -18,7 +18,7 @@ const WhatWeDo = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center">
             {/* card 1  */}
             <div className="p-[2px] mt-8 rounded-lg bg-gradient-to-r from-[#A3D65C] to-[#006838] shadow-md xl:w-[400px]">
-              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around">
+              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around gap-5 lg:gap-0">
                 <img src={magnify} alt="Magnify" className="w-10 h-10" />
                 <p className="w-44 text-green-900 font-semibold">
                   Carefully select lands, flats, and commercial assets
@@ -27,7 +27,7 @@ const WhatWeDo = () => {
             </div>
             {/* card 2  */}
             <div className="p-[2px] mt-8 rounded-lg bg-gradient-to-r from-[#A3D65C] to-[#006838] shadow-md  xl:w-[400px]">
-              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around">
+              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around gap-5 lg:gap-0">
                 <img src={libra} alt="Magnify" className="w-10 h-10" />
                 <p className="w-44 text-green-900 font-semibold">
                   Legally verify each property through due diligence
@@ -36,7 +36,7 @@ const WhatWeDo = () => {
             </div>
             {/* card 3  */}
             <div className="p-[2px] mt-8 rounded-lg bg-gradient-to-r from-[#A3D65C] to-[#006838] shadow-md  xl:w-[400px]">
-              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around">
+              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around gap-5 lg:gap-0">
                 <img src={book} alt="Magnify" className="w-10 h-10" />
                 <p className="w-44 text-green-900 font-semibold">
                   Fractionalize the property into digital shares
@@ -45,7 +45,7 @@ const WhatWeDo = () => {
             </div>
             {/* card 4  */}
             <div className="p-[2px] xl:ml-80 mt-8 rounded-lg bg-gradient-to-r from-[#A3D65C] to-[#006838] shadow-md  xl:w-[400px]">
-              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around">
+              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around gap-5 lg:gap-0">
                 <img src={money} alt="Magnify" className="w-10 h-10" />
                 <p className="w-44 text-green-900 font-semibold">
                   Enable rental income or capital gain-based earnings
@@ -54,9 +54,9 @@ const WhatWeDo = () => {
             </div>
             {/* card 5  */}
             <div className="p-[2px]  xl:ml-80 mt-8 rounded-lg bg-gradient-to-r from-[#A3D65C] to-[#006838] shadow-md  xl:w-[400px]">
-              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around">
+              <div className="bg-[#D9D9D9] p-6 rounded-lg flex items-center justify-around gap-5 lg:gap-0 ">
                 <img src={cycle} alt="Magnify" className="w-10 h-10" />
-                <p className="w-32 text-green-900 font-semibold">
+                <p className="w-44 lg:w-32  text-green-900 font-semibold">
                   Offer buyback or secondary market exits
                 </p>
               </div>
