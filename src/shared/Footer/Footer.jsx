@@ -57,7 +57,11 @@ const Footer = ({ color }) => {
               <a>
                 <AiFillInstagram className="text-xl" />
               </a>
-              <a>
+              <a
+                href="https://www.facebook.com/digiyog.official/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaFacebookSquare className="text-xl" />
               </a>
             </div>
