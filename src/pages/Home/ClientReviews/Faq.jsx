@@ -68,7 +68,7 @@ const Faq = () => {
               </div>
             </div>
             <Link
-              to="/"
+              to="/frequent"
               className="text-[#8EC63F] flex justify-end items-center"
             >
               <p>View More</p>

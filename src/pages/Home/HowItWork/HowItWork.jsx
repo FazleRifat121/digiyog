@@ -30,7 +30,7 @@ const HowItWork = () => {
   const formatFirstThreeWords = (text) => {
     const words = text.trim().split(" ");
     const firstThree = words.slice(0, 4).join(" ");
-    const rest = words.slice(3).join(" ");
+    const rest = words.slice(4).join(" ");
     return (
       <div className="text-3xl w-96 text-green-900">
         <span className="font-semibold font-montRegular">{firstThree}</span>{" "}
